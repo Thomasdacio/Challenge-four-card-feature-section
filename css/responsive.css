@@ -1,0 +1,57 @@
+@media (min-width:1140px) {
+
+    main {
+        display: grid;
+        height: 100vh;
+    }
+
+/* <--- Introduction ---> */
+
+    .introduction {
+        width: 32rem;
+    }
+
+    .introduction .title,
+    .introduction .subtitle {
+        font-size: 2.3rem;
+    }
+
+/* <--- Boxes ---> */
+
+    .box {
+        display: grid;
+        grid-template-areas:
+            ". box-2 ."
+            "box-1 box-2 box-4"
+            ". box-3 .";
+        align-items: center;
+    }
+
+    .box .box-1,
+    .box .box-2,
+    .box .box-3,
+    .box .box-4 {
+        width: 22rem;
+    }
+
+    .box .box-1 {
+        grid-area: box-1;
+        margin-top: 14rem;
+    }
+
+    .box .box-2 {
+        grid-area: box-2;
+        transform: translateY(-2.8rem);
+
+    }
+
+    .box .box-3 {
+        grid-area: box-3;
+        transform: translateY(-10rem);
+    }
+
+    .box .box-4 {
+        grid-area: box-4;
+        margin-top: 14rem;
+    }
+}
